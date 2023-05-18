@@ -1,0 +1,14 @@
+
+@mixin subtitle-before {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: -5px;
+        left: 0;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+    }
+}
