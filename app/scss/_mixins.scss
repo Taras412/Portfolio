@@ -12,3 +12,46 @@
         z-index: -1;
     }
 }
+
+@mixin img-before-about {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: 3px;
+        left: -6px;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+    }
+}
+
+@mixin img-before-education {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: -3px;
+        left: -7px;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+    }
+}
+
+@mixin subtitle-center {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+    }
+}

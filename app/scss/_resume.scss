@@ -1,0 +1,85 @@
+.resume {
+    padding-top: 120px;
+}
+
+.resume__subtitle {
+    text-align: center;
+    position: relative;
+    @include subtitle-center;
+}
+.resume__title {
+    text-align: center;
+}
+.resume__item {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 41px;
+        top: 65px;
+        background-color: #000;
+    }
+    &-head {
+        position: relative;
+        padding: 45px 0 0 100px;
+    }
+    &-icon {
+        position: absolute;
+        top: 51px;
+        left: 48px;
+        @include img-before-education;
+    }
+}
+.resume__item-body {
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 43px;
+    margin-top: 12px;
+}
+
+.resume__wrapper {
+    padding: 35px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 135px;
+}
+
+.resume__column-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 35px;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: $main-color;
+        border-radius: 100%;
+        left: -7px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.resume__item-details {
+    margin-bottom: 12px;
+}
+
+.resume__column {
+    ul {
+        li {
+            position: relative;
+            &:after {
+                content:'';
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                top: -3px;
+                left: 0px;
+                background-color: #000;
+            } 
+        }
+    }
+}
