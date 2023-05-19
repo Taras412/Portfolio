@@ -11,6 +11,10 @@
     color: $text-color;
 }
 
+.promo__wrapper {
+    padding-left: 70px;
+}
+
 .promo__title {
     margin: 10px 0 35px 0;
     
@@ -40,6 +44,7 @@
 }
 
 .sidepanel {
+    
     align-items: center;
     display: flex;
     height: 240px;
@@ -47,7 +52,7 @@
     justify-content: space-between;
     position: absolute;
     top: 240px;
-    left: 10px;
+    left: -10px;
     z-index: 2;
     &__divider {
         width: 2px;
