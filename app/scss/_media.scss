@@ -1,10 +1,119 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 500px;
+            column-gap: 30px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+}
 
 
-@media (max-width: 1400px) {
-    /* .sidepanel {
-        transform: rotate(90deg);
-        top: -70px;
-        left: 140px;
-    } */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        font-size: 30px;
+    }
     
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 30px;
+        }
+        &__skills {
+            padding-left: 20px;
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px; 
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+    }
+    
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .sidepanel {
+        justify-content: start;
+        gap: 20px;
+        top: -87px;
+        left: 20px;
+    }
+    .sidepanel__divider {
+        display: none;
+    }
+    .sidepanel__text {
+        display: none;
+    }
+    .promo__wrapper {
+        padding-left: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 15px;
+        }
+    }
+    .about {
+        
+        &__skills {
+            column-gap: 20px;
+            grid-template: minmax(115px, auto) / 250px;
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+        &__text {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+
+
 }
