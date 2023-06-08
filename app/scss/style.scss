@@ -43,6 +43,11 @@ body {
     font-weight: 700;
     line-height: 60px;
 }
+.text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
 
 .btn {
     height: 45px;
@@ -65,5 +70,7 @@ body {
 @import "menu.scss";
 @import "about.scss";
 @import "resume.scss";
+@import "skills.scss";
+@import "portfolio.scss";
 
 @import 'media.scss';
