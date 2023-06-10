@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: repeat(4, 270px);
     grid-template-rows: repeat(2, 270px);
+    grid-auto-rows: 270px;
     grid-gap: 13px;
 }
 
@@ -44,7 +45,7 @@
     display: grid;
     gap: 45px;
     grid-template-columns: repeat(3, 350px);
-    grid-template-rows: repeat(2, 70px);
+    grid-template-rows: repeat(2, 52px);
     &__flex-box {
         display: flex;
         justify-content: space-between;
