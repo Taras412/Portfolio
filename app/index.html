@@ -566,18 +566,18 @@
                         Or leave your details, I will write you:
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form id="form" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
-                            <label for="name">Your name:</label>
+                            <input name="name" id="name" type="text" placeholder="Your name" value="" required>
+                            <label for="name">Your name*:</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
-                            <label for="email">Your e-mail:</label>   
+                            <input name="email" id="email" type="email" placeholder="Your e-mail" value="" required>
+                            <label for="email">Your e-mail*:</label>   
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text"></textarea>
-                            <label for="text">Your massage:</label>
+                            <textarea name="text" id="text" placeholder="Input Your Massage" value="" required></textarea>
+                            <label for="text">Your massage*:</label>
                         </div>
                         <div class="contacts__triggers">
                             <button class="btn contacts__btn">Send massage</button>
@@ -596,9 +596,15 @@
             </div>
         </div>
     </section>
+    <div id="thanks">
+        Thank You ! Your massage is send.
+    </div>
 
 
-
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>           <!-- jquery  -->
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    <!-- jquery -->
+    <script src="js/jquery.validate.min.js"></script>      <!-- form validation -->
+    <script src="js/jquery.maskedinput.min.js"></script>   <!-- phone mask -->
     <script src="js/main.min.js" ></script>
 </body>
 </html>

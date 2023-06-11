@@ -46,3 +46,25 @@ close.addEventListener('click', () => {        //test menu list
 
 
 
+//sending form
+$(document).ready(function() {
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("")
+            alert('Your message is send')
+            /* $('#thanks').fadeIn('slow'); */
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+}); 
+
+
+
+
+
